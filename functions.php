@@ -639,7 +639,7 @@ add_action( 'wp_enqueue_scripts', function() {
 /*-----------------------------------------------------------------------------------*/
 require 'plugin-update-checker-4.9/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://raw.githubusercontent.com/mrtc-jp/cross/master/theme.json',
+    'https://raw.githubusercontent.com/mrtc-jp/cross/master/theme.json?token=APXEEMHARH2GVYG4NA5KXCS63GYAI',
     __FILE__,
     'cross'
 );
