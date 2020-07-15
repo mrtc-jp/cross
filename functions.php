@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.2.1' );
+	define( '_S_VERSION', '1.2.2' );
 }
 
 if ( ! function_exists( 'cross_setup' ) ) :
@@ -639,7 +639,7 @@ add_action( 'wp_enqueue_scripts', function() {
 /*-----------------------------------------------------------------------------------*/
 require 'plugin-update-checker-4.9/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://raw.githubusercontent.com/mrtc-jp/cross/master/theme.json',
+    'https://raw.githubusercontent.com/mrtc-jp/cross/master/theme.json?token=APXEEMFJ3EVCF3ZG7YG3DQ263HYBQ',
     __FILE__,
     'cross'
 );
