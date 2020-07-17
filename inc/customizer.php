@@ -66,8 +66,8 @@ add_action( 'customize_preview_init', 'cross_customize_preview_js' );
 add_action( 'customize_register', 'theme_customize_register' );
 function theme_customize_register($wp_customize) {
 	
-    $wp_customize->add_section( 'dark_mode_edit', array(
-        'title'          => 'ダークモード設定',
+    $wp_customize->add_section( 'theme_option', array(
+        'title'          => 'テーマオプション',
         'priority'       => 100,
     ));
     
@@ -77,7 +77,17 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control( 'logo_inline_svg', array(
 		'settings'  => 'logo_inline_svg',
 		'label'     => 'ロゴ画像（インラインSVG）',
-		'section'   => 'dark_mode_edit',
-		'type'      => 'textarea',
+		'section'   => 'theme_option',
+		'type'      => 'text',
+	));
+	
+	$wp_customize->add_setting( 'english_title', array(
+    	'type' => 'option',
+	));
+    $wp_customize->add_control( 'english_title', array(
+		'settings'  => 'english_title',
+		'label'     => '英語表記',
+		'section'   => 'theme_option',
+		'type'      => 'text',
 	));
 }
