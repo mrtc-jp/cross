@@ -78,7 +78,7 @@ function theme_customize_register($wp_customize) {
 		'settings'  => 'logo_inline_svg',
 		'label'     => 'ロゴ画像（インラインSVG）',
 		'section'   => 'theme_option',
-		'type'      => 'text',
+		'type'      => 'textarea',
 	));
 	
 	$wp_customize->add_setting( 'english_title', array(
