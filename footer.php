@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<p class="copyright"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&copy; <?php bloginfo( 'name' ); ?></a></p>
+			<p class="copyright"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&copy; <?php echo get_option('english_title'); ?></a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
