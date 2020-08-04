@@ -4,7 +4,7 @@ Theme URI: https://mrtc.jp
 Author: mrtc
 Author URI: https://mrtc.jp
 Description: The theme for Morita Create !
-Version: 1.2.3
+Version: 1.3.1
 */
 
 /*--------------------------------------------------------------
@@ -1746,4 +1746,27 @@ object {
 .dark-theme .nav-links a:hover {
 	background: var(--red);
 	color: var(--white);
+}
+
+/* Ranking */
+.news-list.ranking {
+	counter-reset: ranking;
+}
+.news-list.ranking .post {
+	position: relative;
+}
+.news-list.ranking .post::after {
+	counter-increment: ranking;
+	content: counter(ranking);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2em;
+	height: 2em;
+	background: var(--red);
+	color: var(--white);
+	font-family: var(--font-en);
 }
